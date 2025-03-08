@@ -16,7 +16,13 @@ header {
 h1{
     display: flex;
     justify-content: center;
-    align-items: center;
+    font-size: 3rem;
+    height: 5rem;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    background-color: #bc105c;
+    color: white;
+    text-align: center;
     
 }
 main{
@@ -65,4 +71,17 @@ main{
     padding: 2px 5px 2px 5px;
     border-radius: 3px;
     margin-bottom: 3rem;
+}
+
+.articuloTitulo{
+    display: flex;
+    height: 50px;
+    font-size: 1.3rem;
+    color: #bc105c;
+    border-bottom: 2px dotted #bc105c;
+    margin-bottom: 10px;
+    justify-content: end;
+    align-items: end;
+    
+
 }
