@@ -72,16 +72,3 @@ main{
     border-radius: 3px;
     margin-bottom: 3rem;
 }
-
-.articuloTitulo{
-    display: flex;
-    height: 50px;
-    font-size: 1.3rem;
-    color: #bc105c;
-    border-bottom: 2px dotted #bc105c;
-    margin-bottom: 10px;
-    justify-content: end;
-    align-items: end;
-    
-
-}
