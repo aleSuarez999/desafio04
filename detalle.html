@@ -12,12 +12,13 @@
             //oculto video si se esta mostrando
             video = document.getElementById("tagVideo");
             video.pause();
-            video.style.visibility = "hidden"; // oculta el video
-            video.style.display = "none"; // libera el espacio
+            video.style.visibility = "hidden";
+            video.style.display = "none";
             // cambio imagen
             imgDestino = document.getElementById("imagenAmpliada");
             imgDestino.style.visibility = "visible";
-            imgDestino.style.display = "initial"; // para que vuelva como estaba al principio
+            imgDestino.style.display = "initial";
+            
             imgDestino.src = "img/" + imagenNueva;
          
         }
@@ -34,8 +35,10 @@
             video.style.visibility = "visible";
             video.style.display = "block";
             video.style.width = "100%";
+//            video.style.objectFit = "fill";
             video.autoplay = true;
             video.play();
+            //video.src="media/Mario.mp4" 
         }
      </script>
 </head>
