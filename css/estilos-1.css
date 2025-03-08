@@ -16,13 +16,7 @@ header {
 h1{
     display: flex;
     justify-content: center;
-    font-size: 3rem;
-    height: 5rem;
-    border-left: 2px solid white;
-    border-right: 2px solid white;
-    background-color: #bc105c;
-    color: white;
-    text-align: center;
+    align-items: center;
     
 }
 main{
@@ -42,6 +36,15 @@ main{
     border-radius: 3px;
 }
 
+h1{
+    font-size: 3rem;
+    height: 5rem;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    background-color: #bc105c;
+    color: white;
+    text-align: center;
+}
 .align-items-center {
     display: flex;
     align-items: center;
@@ -58,6 +61,13 @@ main{
     justify-content: end;
     
 }
+
+.justify-content-center {
+    display: flex;
+    justify-content: center;
+}
+
+
 .grupoTitulo{
     
     display: inline-block;
@@ -72,3 +82,31 @@ main{
     border-radius: 3px;
     margin-bottom: 3rem;
 }
+
+
+/*justify-content-end align-items-end se remueve del index*/
+.articuloTitulo{
+    display: flex;
+    height: 50px;
+    font-size: 1.3rem;
+    color: #bc105c;
+    border-bottom: 2px dotted #bc105c;
+    margin-bottom: 10px;
+    justify-content: end;
+    align-items: end;
+    
+
+}
+
+
+.imagenInicial
+{
+    width:100% ;
+}
+/*justify-content-center*/
+footer {
+    display: flex;
+    height: 15vh;
+    justify-content: center;
+}
+
