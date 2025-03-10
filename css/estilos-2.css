@@ -214,7 +214,7 @@ p{
     padding: 0.5rem;
     height: 70px;
     margin: 2rem 2rem;
-    border: 2px solid #2c8f20;;
+    border: 2px solid #fff;
     border-radius: 15px 0; 
     justify-content:space-around;
 }
@@ -271,7 +271,7 @@ p{
     width: 95%;
     margin: auto ;
     /*background-color: #bc105c;*/
-    background-color: white;
+    background-color: #297373;
     padding: 0px;
     border-radius: 5px;
     /*border: 1px solid black;*/
