@@ -177,10 +177,7 @@ p{
     /*height: 100%;*/
 }
 
-p::before {
-    
-  }
-  
+ 
   p::first-letter {
     font-size: 1.5rem;
     /*font-variant: small-caps;*/
@@ -190,7 +187,7 @@ p::before {
 
 @media screen and (max-device-width: 1200px){
 	.detalleDescripcion {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
    
 }
@@ -213,15 +210,31 @@ p::before {
     display: flex;
 }
 .barraImagenes{
-    display: flex;
-    padding: 1rem;
-    height: 400px;
-    width: 10%; /*con un porcentaje se afecta al achicar el medio*/
-    width: 100px; 
-    margin: 1rem 0;
-    border: 2px dotted #2c8f20;;
+    flex-direction: row;
+    padding: 0.5rem;
+    height: 70px;
+    margin: 2rem 2rem;
+    border: 2px solid #2c8f20;;
+    border-radius: 15px 0; 
+    justify-content:space-around;
 }
 
+.miniImagen{
+    border-left: 2px solid black;
+    padding-left: 0px;
+    border-radius: 2px;
+    padding: 5px;
+    max-height: 100px;
+}
+
+.miniImagen:hover{
+    
+  cursor: pointer;
+  border-left: 2px solid #bc105c;
+   
+  opacity: 50%;
+  
+}
 
 .detalleImagen{
     display: flex;
@@ -239,10 +252,10 @@ p::before {
     
     padding: 1rem;
     display: flex;
-    margin: 1rem 0;
-    width: 50%;
+    margin: 0;
+    width: 100%;
     font-size: 0.9rem;
-    flex-direction: column;
+    flex-direction: row;
 
     border-radius: 3px;
     /*border: 2px solid black;*/
@@ -250,18 +263,16 @@ p::before {
 
 .detalleImagen img{
     border-radius: 10px;
-    width: 40%;
-    min-width: 50%;
     /*box-shadow: 5px 5px #bc105c;*/
 }
 
 .detalleContainer{
     display: flex;
-    width: 100%;
+    width: 95%;
     margin: auto ;
     /*background-color: #bc105c;*/
     background-color: white;
-    padding: 10px;
+    padding: 0px;
     border-radius: 5px;
     /*border: 1px solid black;*/
 }
@@ -271,22 +282,6 @@ p::before {
     flex-wrap: wrap;
 }
 
-.miniImagen{
-    border-left: 2px solid black;
-    padding-left: 5px;
-    border-radius: 2px;
-    margin-top: 10%;
-    min-width: 70px;
-}
-
-.miniImagen:hover{
-    
-  cursor: pointer;
-  border-left: 2px solid #bc105c;
-   
-  opacity: 50%;
-  
-}
 /*
 .miniImagen:active{
 
