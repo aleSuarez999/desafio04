@@ -131,6 +131,11 @@ footer {
 
 /***************DETALLE***************/
 
+.divWrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .articuloDetalle{
     display: flex;
 }
