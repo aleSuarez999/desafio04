@@ -16,11 +16,13 @@ body{
 header {
     height: 12vh;
 }
+
 h1{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 main{
     
     background-color: #bc105c;
@@ -52,8 +54,7 @@ h1{
     align-items: center;
 }
 
-.align-items-end
-{
+.align-items-end{
     display: flex;
     align-items: end;
 }
@@ -71,23 +72,22 @@ h1{
 
 
 .grupoTitulo{
-    
     display: inline-block;
     font-size: 1.3rem;
     color: white;
     margin-bottom: 1rem;
     align-items: center;
 }
-.articuloInicial{
+
+.articuloInicial {
     background-color: white;
     padding: 2px 5px 2px 5px;
     border-radius: 3px;
     margin-bottom: 3rem;
 }
 
-
 /*justify-content-end align-items-end se remueve del index*/
-.articuloTitulo{
+.articuloTitulo {
     display: flex;
     height: 50px;
     font-size: 1.3rem;
@@ -96,15 +96,12 @@ h1{
     margin-bottom: 10px;
     justify-content: end;
     align-items: end;
-    
-
 }
 
-
-.imagenInicial
-{
+.imagenInicial {
     width:100% ;
 }
+
 /*justify-content-center*/
 footer {
     display: flex;
@@ -112,7 +109,7 @@ footer {
     justify-content: center;
 }
 
-.botonComprar{
+.botonComprar {
     font-weight: bold;
     font-size: 1.2rem;
 
@@ -123,31 +120,36 @@ footer {
     border-radius: 0.5rem;
 }
 
-.botonComprar:hover{
+.botonComprar:hover {
     background-color: #e72864;
     cursor:pointer
 }
+
 
 /***************DETALLE***************/
 
 /*esto es de pruena para que mande el boton de abajo para 
 arriba si se achica la pantall */
 
+/*
 @media screen and (max-device-width: 1200px){
 	.detalleDescripcion {
         flex-direction: column-reverse;
     }
    
 }
+*/
 
 
-
-.articuloDetalle{
+.articuloDetalle {
     display: flex;
 }
 
 .flex-direction-column {
     flex-direction: column;
+}
+.flex-direction-row {
+    flex-direction: row;
 }
 
 .justify-content-center {
@@ -159,7 +161,7 @@ arriba si se achica la pantall */
     justify-content: space-evenly;
     display: flex;
 }
-.barraImagenes{
+.barraImagenes {
     display: flex;
     padding: 1rem;
     height: 400px;
@@ -172,13 +174,13 @@ arriba si se achica la pantall */
     
 }
 
-.detalleImagen{
+.detalleImagen {
     display: flex;
     padding: 1rem;
     
     margin: 1rem 0;
-    width: 40%;
-    min-width: 300px;
+    max-width: 600px;
+    min-width: none;
     border-radius: 3px;
     /*border: 2px solid black;*/
     justify-content: center;
@@ -186,45 +188,51 @@ arriba si se achica la pantall */
     
 }
 
-.detalleDescripcion{
-    padding: 1rem;
-    display: flex;
-    margin: 1rem 0;
-    width: 50%;
+.detalleDescripcion {
+    padding: 0.5rem;
+    display: block;
+    margin: 0.5rem 0;
+    max-width: 400px;
+    /*width: 50%;*/
     font-size: 0.9rem;
-    flex-direction: column;
+    /*flex-direction: column;*/
     border-radius: 3px;
     /*border: 2px solid black;*/
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     
 }
 
 .detalleDescripcion div{
-    justify-content: center;
+    /*justify-content: center;*/
 }
 
 .detalleImagen img{
     border-radius: 10px;
-    width: 40%;
+    /*width: 40%;*/
     min-width: 50%;
     /*box-shadow: 5px 5px #bc105c;*/
 }
 
 .detalleContainer{
+    /*width: 100%;*/
     display: flex;
-    width: 100%;
     margin: auto ;
     /*background-color: #bc105c;*/
     background-color: white;
     padding: 10px;
     border-radius: 5px;
     /*border: 1px solid black;*/
-    justify-content: space-evenly;
 }
+
+/*borre el display flex de .detalleContainer*/
 
 .divWrap{
     display: flex;
     flex-wrap: wrap;
+}
+
+.imagenesContainer{
+    max-width: 700px;
 }
 
 .miniImagen{
@@ -244,6 +252,7 @@ arriba si se achica la pantall */
   opacity: 50%;
   
 }
+
 /*
 .miniImagen:active{
 
@@ -254,6 +263,10 @@ arriba si se achica la pantall */
 #imagenAmpliada{
     width: 100%;
 
+}
+.containerComprar{
+    display: flex;
+    justify-content: center;
 }
 
 .blanco
@@ -287,4 +300,17 @@ a{
 
     border-radius: 10px;
     border: 2px solid #bc105c;
+}
+
+/*media query para mobile*/
+@media(max-width: 767px){
+    body{
+        width: 85%;
+    }
+    .barraImagenes {
+        display: flex;
+        flex-direction: row;
+        min-width: none;
+        max-height: 100px;
+    }
 }
