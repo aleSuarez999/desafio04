@@ -288,3 +288,12 @@ a{
     border-radius: 10px;
     border: 2px solid #bc105c;
 }
+
+.detalleTitulo{
+    
+    display: inline-block;
+    font-size: 1.3rem;
+    color: white;
+    margin-bottom: 1rem;
+    align-items: center;
+}
