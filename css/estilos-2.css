@@ -184,6 +184,17 @@ p{
   }
   
 /***************DETALLE***************/
+
+@media(max-width: 984px){
+    body{
+  
+        min-width: 700px;
+    }
+}
+.divnoWrap{
+    display: flex;
+    justify-content: space-around;
+}
 .detalleContainer{
     background-color: #297373;
     
@@ -254,14 +265,9 @@ p{
     align-items: center;
     align-self:self-end;
     flex-wrap:initial;
-    width: 50%;
+    width: 70%;
     
     
-}
-
-.detalleDescripcion div {
-    
-
 }
 
 .detalleDescripcion h3 {

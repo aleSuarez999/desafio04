@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/estilos-1.css">
-    <!--<link rel="stylesheet" href="css/estilos-2.css"> -->
+    <!--<link rel="stylesheet" href="css/estilos-1.css">-->
+    <link rel="stylesheet" href="css/estilos-2.css"> 
 
     <script>
         function cambiaImagen(imagenNueva)
         {
             //oculto video si se esta mostrando
             video = document.getElementById("tagVideo");
-            video.pause();
+    
             video.style.visibility = "hidden";
             video.style.display = "none";
             // cambio imagen
@@ -64,6 +64,7 @@
            
                 <div class="detalleImagen ">
                     <img id="imagenAmpliada" src="img/MK1101.jpg" alt="">
+                    <video id="tagVideo"  src="media/MarioKart8.mp4" controls  style="display: none;" ></video>
                 </div>
                 <div class="divnoWrap ">
                     <div class="detalleDescripcion">
