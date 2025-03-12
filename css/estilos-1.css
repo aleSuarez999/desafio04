@@ -195,7 +195,7 @@ arriba si se achica la pantall */
     display: block;
     margin: 0.5rem 0;
     
-    /*width: 50%;*/
+    width: 50%;
     font-size: 0.9rem;
     /*flex-direction: column;*/
     border-radius: 3px;
@@ -304,11 +304,11 @@ a{
 /*media query para mobile*/
 @media(max-width: 984px){
     body{
-        width: 95%;
+  
         min-width: 500px;
     }
 }
-    @media(max-width: 776px){
+    @media(max-width: 1000px){
         .barraImagenes {
         padding: 10px;
         flex-direction: row-reverse;
