@@ -50,10 +50,10 @@
         </div>
     </header>
 
-
     <main>
         <h2 class="detalleTitulo"><a href="index.html" class="blanco">Los más Vendidos</a> / Mario Kart™ 8 Deluxe</h2>
         <div class="detalleContainer ">
+            <div class="divWrap">
             <div class="barraImagenes ">
                 <img class="miniImagen" src="img/MK1101_mini.png" alt="Imagen de Scorpion y Subzero" onclick="cambiaImagen('MK1101.jpg')">
                 <img class="miniImagen" src="img/MK1102_mini.png" alt="Imagen de pelea de rayden" onclick="cambiaImagen('MK1102.jpg')">
@@ -61,16 +61,13 @@
                 <img class="miniImagen" src="img/MK1104_mini.png" alt="Imagen de Robocop" onclick="cambiaImagen('MK1104.jpg')">
                 <img class="miniImagen" src="img/MK1105_mini.png" alt="Imagen de Pelea con espadas" onclick="cambiaImagen('MK1105.jpg')">
             </div>
-            <div class="divWrap">
+           
                 <div class="detalleImagen ">
                     <img id="imagenAmpliada" src="img/MK1101.jpg" alt="">
                 </div>
+                <div class="divnoWrap ">
                 <div class="detalleDescripcion">
-                    <div >
-                        <form action="comprar.html" target="_blank">
-                            <button class="botonComprar" type="submit" >Comprar!</button>
-                        </form>
-                    </div>
+                 
                     <h3>Lo que tenés que saber de este producto</h3>
                     <ul>
                         <li> Se requiere PS Plus para jugar online</li>
@@ -83,11 +80,12 @@
                         <li> Compras dentro del juego, Los usuarios interactúan</li>
 
                     </ul>
-                    <div class="justify-content-center">
-                    <form action="comprar.html" target="_blank">
-                        <button class="botonComprar" type="submit" >Comprar!</button>
-                    </form>
                 </div>
+                    <div class="containerComprar">
+                        <form action="comprar.html" target="_blank">
+                            <button class="botonComprar" type="submit" >Comprar!</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

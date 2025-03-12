@@ -77,6 +77,8 @@ h1{
     color: white;
     margin-bottom: 1rem;
     align-items: center;
+    /*flex-wrap: wrap;*/
+    
 }
 
 .articuloInicial {
@@ -192,7 +194,7 @@ arriba si se achica la pantall */
     padding: 0.5rem;
     display: block;
     margin: 0.5rem 0;
-    max-width: 400px;
+    
     /*width: 50%;*/
     font-size: 0.9rem;
     /*flex-direction: column;*/
@@ -200,10 +202,6 @@ arriba si se achica la pantall */
     /*border: 2px solid black;*/
     /*justify-content: space-between;*/
     
-}
-
-.detalleDescripcion div{
-    /*justify-content: center;*/
 }
 
 .detalleImagen img{
@@ -221,6 +219,7 @@ arriba si se achica la pantall */
     background-color: white;
     padding: 10px;
     border-radius: 5px;
+    flex-wrap: wrap;
     /*border: 1px solid black;*/
 }
 
@@ -303,14 +302,24 @@ a{
 }
 
 /*media query para mobile*/
-@media(max-width: 767px){
+@media(max-width: 984px){
     body{
-        width: 85%;
+        width: 95%;
+        min-width: 500px;
     }
-    .barraImagenes {
-        display: flex;
-        flex-direction: row;
-        min-width: none;
+}
+    @media(max-width: 776px){
+        .barraImagenes {
+        padding: 10px;
+        flex-direction: row-reverse;
+        min-width: 80%;
         max-height: 100px;
+        margin: auto;
+        
+        
     }
+        .miniImagen{
+            margin: auto;
+            
+        }
 }
