@@ -308,17 +308,17 @@ a{
         min-width: 500px;
     }
 }
-    @media(max-width: 1000px){
-        .barraImagenes {
+@media(max-width: 1000px){
+    .barraImagenes {
         padding: 10px;
         flex-direction: row-reverse;
         min-width: 80%;
         max-height: 100px;
-        margin: auto;
+        flex-wrap: wrap;
         
         
     }
-        .miniImagen{
+    .miniImagen{
             margin: auto;
             
         }
